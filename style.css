@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    margin: 10px 10px 10px 10px;
+}
+
+/*.first{
+	background-color: green;*/ /* Использование селектора по классу*/
+}
+#d1{
+	background-color: LightCoral; /*Использование селектора по айди,смена цвета*/
+}
+
+#d2{
+	background-color: Orange; /*Использование селектора по айди,смена цвета*/
+}
+
+#d3{
+	background-color: DarkCyan; /*Использование селектора по айди,смена цвета*/
+}
+
+#d4{
+	background-color: DarkKhaki; /*Использование селектора по айди,смена цвета*/
+}
+
+#d5{
+	background-color: MediumSlateBlue; /*Использование селектора по айди,смена цвета*/
+}
+
+#d6{
+	background-color: Fuchsia; /*Использование селектора по айди,смена цвета*/
+}
+
+p:first-letter{  
+	font-size: 30px;/* псевдоэлемент,создающий начальный символ абзаца,который выделяеться из остального текста*/
+	color: DarkGreen;
+}
+
+p:first-line{
+	font-weight: bold;/* псевдоэлемент,использующй всю первую строку текста*/
+	color: YellowGreen;
+}
+
+.one:before{
+	content: "первый квадратик "/* псевдоэлемент,добовляющий текст в начале элемента,который мы укажем */
+}
+.two:after{
+	content: " КОНЕЦ ОПИСАНИЯ ВТОРОГО КВАДРАТИКА "/* псевдоэлемент,добовляющий текст в конец элемента,который мы укажем */
+}
+
+::selection{
+	color: LightCyan;
+	background-color: Black;/* псевдоэлемент,отвечающий за выделение */
+}
+p:first-child {
+  color: BurlyWood;
+  background-color: Cornsilk;/*псевдокласс,находит любой элемент, являющийся первым у родителя */
+  padding: 5px;
+}
+a:hover{
+	background: PeachPuff ;/*псевдокласс,находит любой элемент, являющийся первым у родителя */
+	color: DarkMagenta;
+}
+a[href="https://ru.wikipedia.org/wiki/Оранжевый_цвет"]{
+	color: OliveDrab;/*Цвет ссылки */
+}
+a:visited{
+	color: Teal;/*псевдокласс,отмечает цветом посещенную ссылку */
+}
